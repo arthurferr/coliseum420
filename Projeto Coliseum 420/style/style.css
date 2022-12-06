@@ -1,0 +1,1017 @@
+/*------ Style Reset -------*/
+@font-face {
+    font-family: Kolker Brush;
+    src: url(/style/KolkerBrush-Regular.ttf);
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url(/style/Rubik-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*------- MENU Style -------*/
+.nav-bar {
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/*------- LOGO Menu Style -------*/
+.logo {
+    margin: 1rem;
+    padding: 0;
+    width: 5rem;
+    text-decoration: none;
+
+}
+
+.links {
+    /* border: 1px solid red; */
+    margin: 0.3rem 0.3rem;
+    padding: 0.4rem 1rem;
+    color: white;
+    font-size: larger;
+    text-transform: uppercase;
+
+}
+
+
+/*------- HOVER Navbar Menu Style -------*/
+.links:hover {
+    background: linear-gradient(white, #4F4F4F);
+    color: black;
+    text-decoration: none;
+}
+
+/*------- CARROUSSEL Style -------*/
+.carroussel {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*------- Carroussel INDICATOR Style -------*/
+#indicators {
+    margin: 0;
+    padding: 0;
+}
+
+/*------- Carroussel CAPTION Style -------*/
+.carousel-item h2 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-shadow: 0.1rem 0.1rem 02rem black, 0 0 2.5rem blue, 0 0 0.5rem darkblue;
+}
+
+
+/*----- Main CONTENT Style -----*/
+.main-content {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+
+}
+
+
+/*----- Main SECTION Style -----*/
+.main-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 2rem;
+
+}
+
+/*----- TEXT Block Styles -----*/
+.text-block {
+    max-width: 30rem;
+    height: fit-content;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.text-block h1 {
+    font-size: 3rem;
+}
+
+.text-block p {
+    font-size: 1.8rem;
+}
+
+/*----- IMAGE Block Style -----*/
+.image-block {
+    border: 1px solid rgb(34, 46, 7);
+    margin-bottom: 3rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 3rem;
+}
+
+/*----- Section DIVIDER Style -----*/
+#bait-1 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgb(100, 19, 19);
+}
+
+/*----- SECONDARY Section Style -----*/
+.cards-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+/*------- BASIC PLAN CARD STYLE -----------------*/
+.card-container {
+    width: 20rem;
+    max-width: 100%;
+    height: 24rem;
+    max-height: 100%;
+    border-radius: 1.5rem;
+    margin-top: 1.8rem;
+    margin-bottom: 2rem;
+    box-shadow: 0.3rem 0.3rem 0.5rem #888888;
+    background-color: white;
+}
+
+.card-container h2 {
+    border-bottom: 0.1rem solid #043503;
+    padding-bottom: 0.3rem;
+    margin: 1rem 1rem 1rem;
+}
+
+.card-inner p {
+    font-size: 1.5rem;
+    max-width: 100%;
+    font-weight: bold;
+    text-align: left;
+    margin: 0 0 0 1rem;
+}
+
+.card-container li {
+    text-align: left;
+    margin-left: 3rem;
+}
+
+.marker {
+    height: 1rem;
+}
+
+.marker-subitem {
+    list-style-type: square;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.basic-cost {
+    font-size: xx-large;
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    max-width: 15rem;
+    border-radius: 3rem;
+    box-shadow: 0.3rem 0.3rem 0.5rem #888888;
+    background: linear-gradient(0deg, #043503 25%, #45e452 100%);
+    color: white;
+}
+
+/*------- PREMIUM PLAN CARD STYLE -----------------*/
+#obs {
+    margin: -1rem auto;
+    max-width: 100%;
+    text-align: center;
+    font-size: 10px;
+    /* border: 1px solid red; */
+}
+
+.premium-cost {
+    font-size: xx-large;
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    max-width: 15rem;
+    border-radius: 3rem;
+    box-shadow: 0.3rem 0.3rem 0.5rem #888888;
+    background: linear-gradient(0deg, #030635 25%, #4577e4 100%);
+    color: white;
+}
+
+/*------- TOP PREMIUM PLAN CARD STYLE -----------------*/
+.submarker {
+    padding-right: 10px;
+    height: 10px;
+}
+
+.top-premium-plan-card-list {
+    list-style-type: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.top-premium-plan-card-cost {
+    font-size: xx-large;
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    max-width: 15rem;
+    border-radius: 3rem;
+    box-shadow: 0.3rem 0.3rem 0.5rem #888888;
+    background: linear-gradient(0deg, #837604 25%, #e1e445 100%);
+    color: white;
+}
+
+
+
+/*-------- Configurações de Cards das Atividades ---------*/
+.cards-activities {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.card {
+    align-items: center;
+    box-shadow: 0 4px 8px 0 #000000;
+    transition: 0.3s;
+    width: 25rem;
+    height: auto;
+    padding: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.card img {
+    border-radius: 0.3rem;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 #ebcd49;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.container p {
+    text-align: justify;
+}
+
+.activity-btn {
+    text-align: center;
+    background: #4577e4;
+    color: antiquewhite;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 10rem;
+}
+
+/*------- Horario das Atividades -------*/
+.schedule-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.schedule-day {
+    margin: 15px;
+    padding: 5px;
+    width: 18rem;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 8px 0 #000000;
+    border-radius: 3px;
+}
+
+.schedule {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.activity {
+    padding: 3px;
+    margin: 0;
+}
+
+.activity-p {
+    border-bottom: 1px solid #cecece;
+}
+
+.schedule-day-mon {
+    background: radial-gradient(circle, rgb(25, 112, 24) 54%, rgb(1, 253, 22) 100%);
+}
+
+.schedule-day-tue {
+    background: radial-gradient(circle, rgb(112, 24, 83) 54%, rgb(253, 1, 211) 100%);
+}
+
+.schedule-day-wed {
+    background: radial-gradient(circle, rgb(231, 135, 10) 54%, rgb(234, 255, 2) 100%);
+}
+
+.schedule-day-thu {
+    background: radial-gradient(circle, rgb(24, 37, 112) 54%, rgb(1, 173, 253) 100%);
+}
+
+.schedule-day-fri {
+    background: radial-gradient(circle, rgb(112, 24, 24) 54%, rgb(253, 1, 1) 100%);
+}
+
+.schedule-day-sat {
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.schedule-img {
+    width: 6rem;
+    margin-top: 2rem;
+}
+
+/*--------- Cards Loja --------*/
+.store-banner {
+    display: flex;
+    justify-content: center;
+}
+
+.store-banner img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.store-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.store-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    width: 25rem;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 #000000;
+}
+
+.store-card h3 {
+    text-shadow: 0 0 10px black;
+    color: white;
+}
+
+.store-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.3rem;
+}
+
+.store-card:hover {
+    box-shadow: 0 8px 16px 0 #ebcd49;
+}
+
+.title {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/*----- Masculine Model Styles -----*/
+.store-masc-card-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    width: 15rem;
+    background: radial-gradient(circle, rgb(64, 43, 180) 0%, rgba(148, 187, 233, 1) 100%);
+    box-shadow: 0 4px 8px 0 #000000;
+}
+
+.store-masc-card-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+
+}
+
+/* Workout Styles */
+.workout-top-img {
+    padding: 0.5rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.workout-main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 90%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.workout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+@media (max-width:800px) {
+    .workout-container {
+        flex-wrap: wrap;
+    }
+}
+
+.workout-container ol {
+    margin: 0;
+    padding: 1.5rem;
+    font-size: large;
+    text-align: justify;
+}
+
+.workout-img {
+    border-radius: 2.5rem;
+    width: 600px;
+    max-width: 100%;
+    padding: 0.5rem;
+}
+
+/* Jiu-Jitsu Styles */
+.jiu-main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.jiu-title {
+    font-size: 100px;
+    margin-top: -3rem;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+}
+
+.jiu-kimono {
+    width: 100%;
+    max-width: 38rem;
+    height: auto;
+    border-radius: 2rem;
+}
+
+.jiu-eye {
+    text-align: center;
+    margin-top: 3rem;
+    font-style: italic;
+}
+
+.jiu-eye-phrase {
+    display: inline-block;
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 3rem;
+    border-top: 2px solid rgb(51, 46, 46);
+    border-bottom: 2px solid rgb(51, 46, 46);
+}
+
+.jiu-fight {
+    width: 100%;
+    max-width: 38rem;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+}
+
+.jiu-paragraf {
+    text-align: justify;
+    max-width: 600px;
+}
+
+.jiu-arrow {
+    height: 1.5rem;
+    margin: 0 1rem 0.5rem 0;
+}
+
+/* Boxe Styles */
+.boxe-main {
+    padding: 1rem;
+}
+
+.boxe-title {
+    width: 700px;
+    max-width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    margin: 0 auto 2rem auto;
+}
+
+.boxe-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.boxe-subtitle {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.boxe-sec-img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.boxe-ter-img {
+    height: 100%;
+    max-height: 600px;
+    transform: scaleX(-1);
+    margin-right: 1rem;
+}
+
+.boxe-merchan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxe-merchan-text {
+    text-align: center;
+    color: white;
+    background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 85%);
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 3rem 1rem 1rem 1rem;
+    max-width: 600px;
+}
+
+
+/* Judo Styles */
+.judo-title {
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 15rem;
+    margin-bottom: 8rem;
+    font-size: 5rem;
+    text-shadow: 1px 1px 1px white;
+
+}
+
+@media (max-width:600px) {
+    .judo-title {
+        font-size: 3.5rem;
+        padding-top: 10rem;
+        text-shadow: -1px -1px white;
+        margin-bottom: 0;
+    }
+}
+
+.judo-background {
+    position: absolute;
+    width: 100%;
+}
+
+.judo-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    position: relative;
+    gap: 1rem;
+}
+
+.judo-main-text {
+    width: 400px;
+}
+
+.judo-main-img {
+    max-width: 100%;
+    width: 500px;
+    border-radius: 2rem;
+}
+
+.judo-eye {
+    margin: 2rem auto;
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
+
+@media (max-width: 600px) {
+    .judo-eye {
+        width: 400px;
+    }
+}
+
+.judo-sec {
+    justify-content: space-evenly;
+}
+
+.judo-sec-img {
+    border-radius: 2rem;
+    max-height: 600px;
+    max-width: 100%;
+}
+
+.judo-ico {
+    width: 5rem;
+    padding-right: 1rem;
+}
+
+.judo-list {
+    width: 600px;
+}
+
+/*----- Ritmos Styles -----*/
+.ritmos-main-img {
+    width: 100%;
+    opacity: 50%;
+    position: absolute;
+}
+
+.ritmos-main-title {
+    position: relative;
+    font-family: 'Kolker Brush', cursive;
+    font-size: 13rem;
+    padding-left: 3rem;
+}
+
+.ritmos-main-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.ritmos-main-content p {
+    width: 400px;
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.ritmos-main-content iframe {
+    max-width: 100%;
+    align-items: center;
+    border: 4px solid white;
+    border-radius: 1rem;
+
+}
+
+.ritmos-content-division {
+    position: relative;
+    max-width: 500px;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 1rem;
+    border-top: 0.2rem solid rgb(39, 33, 33);
+    border-bottom: 0.2rem solid rgb(39, 33, 33);
+}
+
+.ritmos-sec-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.ritmos-sec-content img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 10px black;
+}
+
+.ritmos-sec-content h3 {
+    width: 400px;
+}
+
+/*---- Jiu-Jitsu Kids Styles ----*/
+.bjjkids-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bjjkids-title {
+    font-family: 'Rubic', sans-serif;
+    font-size: 120px;
+    text-align: center;
+}
+
+.bjjkids-img-title {
+    width: 100%;
+    max-width: 400px;
+
+}
+
+.bjjkids-eye {
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    font-family: 'Rubic', sans-serif;
+    text-align: center;
+    margin: 3rem 0;
+    padding: 2rem;
+    max-width: 500px;
+}
+
+.bjjkids-text {
+    display: inline-block;
+    vertical-align: top;
+    padding: 2rem;
+}
+
+.bjjkids-text p {
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+.bjjkids-text img {
+    float: right;
+    width: 500px;
+    max-width: 100%;
+    margin-left: 2rem;
+}
+
+.bjjkids-eye-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bjjkids-eye-2 img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.bjjkids-eye-2 h3 {
+    width: 700px;
+    max-width: 100%;
+    margin-top: 5rem;
+    padding: 1rem 2rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.bjjkids-eye-2 p {
+    font-size: 20px;
+    text-align: right;
+    font-style: italic;
+}
+
+#bjjkids-benefits {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.bjjkids-end {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.bjjkids-end-iten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bjjkids-end img {
+    margin-top: 3rem;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 10px black;
+}
+
+.horarios-btn {
+    text-align: center;
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    width: 20rem;
+    padding: 1rem;
+    margin: 5rem auto 3rem auto;
+    border-radius: 1rem;
+
+}
+
+.horarios-btn a {
+    font-size: xx-large;
+    color: white;
+}
+
+.horarios-btn a:hover {
+    text-decoration: none;
+    color: white;
+    text-shadow: 5px 5px 15px rgb(255, 255, 0);
+}
+
+/*---- Sobre Styles ----*/
+.sobre-main {
+    padding: 1rem;
+}
+
+.sobre-main-img {
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-main-img img {
+    max-width: 100%;
+
+}
+
+.sobre-main h1 {
+    width: 400px;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.sobre-history p {
+    font-size: large;
+    text-indent: 2rem;
+    text-align: justify;
+}
+
+#sobre-img-1 {
+    float: right;
+    width: 100%;
+    max-width: 600px;
+    margin-left: 2rem;
+}
+
+.sobre-eye {
+    width: 500px;
+    max-width: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin: 3rem auto;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#sobre-img-2 {
+    float: left;
+    max-width: 100%;
+    width: 600px;
+    margin-right: 2rem;
+}
+
+/*---- Contato Styles ----*/
+.contact-main {
+    background: #f1f1f1;
+    padding: 1rem;
+}
+
+.contact-main h1 {
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.contact p {
+    margin-right: 3rem;
+
+}
+
+#telephone {
+    width: 30px;
+    margin-right: 1rem;
+}
+
+.contact-main p {
+    font-size: x-large;
+}
+
+
+.contact-media {
+    overflow: auto;
+}
+
+.contact-main h2 {
+    text-align: center;
+}
+
+.contact-media iframe {
+    float: right;
+    max-width: 100%;
+    margin-bottom: 2rem;
+    border: 2px solid black;
+    box-shadow: 2px 2px 15px black;
+}
+
+#facebook-ico {
+    width: 100px;
+    margin-top: 1rem;
+}
+
+.contact-div-insta {
+    margin-top: 2rem;
+    text-align: center;
+    width: 650px;
+    max-width: 100%;
+}
+
+.contact-media img {
+    align-items: center;
+    width: 100%;
+    max-width: 150px;
+    padding: 0.5rem;
+}
+
+
+
+
+/*--------- Configurações de Rodapé --------*/
+footer {
+    background: black;
+    /* margin-top: 3rem; */
+    padding: 1rem;
+    clear: both;
+    position: relative;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.footer-links a {
+    padding: 1rem;
+    text-decoration: none;
+    color: rgb(95, 90, 90);
+}
+
+.footer-links a:hover {
+    text-decoration: none;
+    color: rgb(95, 90, 90);
+}
+
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.social-media img {
+    height: 3rem;
+
+}
+
+/*-------- Creditos ---------*/
+.credit {
+    display: flex;
+    justify-content: center;
+    color: rgb(133, 129, 129);
+    margin-top: 10px;
+}
